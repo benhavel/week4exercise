@@ -1,4 +1,39 @@
 /*Cascading Style Sheets*/
-li:last-child {
-	color:green;
+body {
+	text-align: center;
 }
+.box {
+	display: inline-block; 
+	height: 100px;
+	width: 20%;
+}
+.blue {
+	background-color: blue;
+}
+.dodgerblue {
+	background-color: dodgerblue;
+}
+.darkblue {
+	background-color: darkblue;
+}
+.lightblue {
+	background-color: lightblue;
+}
+
+.container {
+	height: 200px;
+	width: 200px;
+	background-color: dodgerblue;
+}
+
+@media(max-width: 600px) {
+	.darkblue, .dodgerblue {
+		display: none;
+	}
+}
+@media(min-width: 1000px) {
+	.box {
+		width: 100%;
+	}
+}
+
